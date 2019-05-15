@@ -3,7 +3,7 @@ class Particle {
 		this.position = createVector(width/2, height/2);
 		this.rays = [];
 
-		const degree = 0.6; // change rays casting
+		const degree = 0.6; // change rays casting 0.6 seems good
 		for (let angle = 0; angle < 360; angle += degree) {
 			this.rays.push(new Ray(this.position, radians(angle)));
 		}
@@ -33,7 +33,7 @@ class Particle {
 			}
 			if (closest) {
 				// transparency
-				stroke(255, 100);
+				stroke(255, 50);
 				line(this.position.x, this.position.y, closest.x, closest.y);
 			}
 		}
