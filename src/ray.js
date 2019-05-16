@@ -21,10 +21,10 @@ class Ray {
 	// line-in-line is already implemented in the p5 library, but who needs that
 	// maths described here: https://en.wikipedia.org/wiki/Line–line_intersection
 	cast(wall) {
-		const x1 = wall.a.x;
-		const y1 = wall.a.y;
-		const x2 = wall.b.x;
-		const y2 = wall.b.y;
+		const x1 = wall.start.x;
+		const y1 = wall.start.y;
+		const x2 = wall.end.x;
+		const y2 = wall.end.y;
 
 		const x3 = this.pos.x;
 		const y3 = this.pos.y;
